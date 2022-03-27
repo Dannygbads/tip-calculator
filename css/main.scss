@@ -1,0 +1,291 @@
+body{
+    background:  hsl(185, 41%, 84%);
+    min-width: 300px;
+    font-family: Space Mono;
+    
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+label{
+    display: block;
+}
+
+section{
+    background:  hsl(0, 0%, 100%);
+    border-radius: 6px;
+    .calc-body{
+        padding-left: 25px;
+        padding-right: 10px;
+        
+        .b-input{
+            margin-bottom: 2em;
+            height: 65px;
+            
+            padding-top: 25px;
+            position: relative;
+            input{
+                width: 70%;
+                height: 30px;
+                background-color: hsl(189, 41%, 97%);
+                border: none;
+                border-radius: 5px;
+                text-align: right;
+                color: hsl(183, 100%, 15%);
+                font-weight: 700;
+                font-size: 1.5rem;
+                font-family: Space Mono;
+
+                
+            }
+            svg{
+                position: absolute;
+                left: 0;
+                padding: 5px 5px;
+            }
+            .bill-error{
+                padding: 0;
+                margin: 0;
+                display: none;
+               
+                }
+                .show-bill-error{
+                    font-size: 0.8rem;
+                    color: rgb(250, 190, 190);
+                }
+        }
+        .nop-input{
+            margin-bottom: 2.5em;
+            height: 65px;
+            position: relative;
+           
+            input{
+                width: 70%;
+                height: 30px;
+                background-color: hsl(189, 41%, 97%);
+                border: none;
+                border-radius: 5px;
+                text-align: right;
+                color: hsl(183, 100%, 15%);
+                font-weight: 500;
+                font-size: 1.5rem;
+                font-family: Space Mono;
+
+            }
+            svg{
+                position: absolute;
+                left: 0;
+                padding: 5px 5px;
+            }
+            .nop-error{
+                 display: none;
+            
+                }
+            .show-nop-error{
+                font-size: 0.8rem;
+                color: rgb(250, 190, 190);
+            }
+        }
+    }
+    .button{
+       
+        label{
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+        }
+        .btn{
+            display: flex;
+            gap: 1em 1em;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+            font-family: Space Mono;
+            
+
+
+            .amount-btna{
+                width: 7em;
+                height: 3em;
+                background-color: hsl(183, 100%, 15%);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-family: Space Mono;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+           
+            .custom-btn{
+                width: 7em;
+                height: 3em;
+                border: none;
+                border-radius: 5px;
+                color:  hsl(183, 100%, 15%);
+                background-color: hsl(189, 41%, 97%);
+                font-weight: 900;
+                text-align: right;
+                font-family: Space Mono;
+                font-size: 1rem;
+
+
+            }
+        }
+    }
+    
+   
+}
+.footer{
+    padding: 25px;
+    margin-right: 1em;
+  
+}
+.tip-total{
+   
+    background:  hsl(183, 100%, 15%);
+    width: 90%;
+    border-radius: 7px;
+    padding-left: 1.3em;
+    padding-right: 2em;
+    font-family: Space Mono;
+
+    .tip-amount{
+        line-height: 1;
+        padding-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Space Mono;
+
+        h2{
+            margin: 0;
+            padding-top: 1em;
+            font-size: 1rem;
+            font-weight: 100;
+            color: rgb(236, 236, 236);
+        }
+        .person{
+            color:hsl(185, 41%, 84%) ;
+            font-size: 1rem;
+        }
+        .number1{
+            color:hsl(172, 67%, 45%);
+            font-family: Space Mono;
+            font-size: 1.5rem;
+
+
+        }
+    }
+    .total-amount{
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        justify-items: center;
+        h2{
+            margin: 0;
+            padding-top: 1em;
+            font-size: 1rem;
+            font-weight: 100;
+            color: rgb(236, 236, 236);
+        }
+        .person{
+            color:hsl(185, 41%, 84%) ;
+            font-size: 1rem;
+        }
+        .number2{
+            color:hsl(172, 67%, 45%);
+            font-family: Space Mono;
+            font-size: 1.5rem;
+
+
+           
+        }
+    }
+    .reset-btn{
+        margin-top: 1.5em;
+        background-color: hsl(172, 67%, 45%);
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        width: 100%;
+        height: 3em;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: hsl(183, 100%, 15%);
+        font-family: Space Mono;
+        font-size: 1.2rem;
+
+        
+    }
+}
+
+@media screen and (min-width:500px) {
+    body{
+        margin: 5em auto;
+        max-width: 990px;
+        min-width: 910px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tip-total{
+   
+        background:  hsl(183, 100%, 15%);
+        width: 90%;
+        height: 100%;
+        border-radius: 7px;
+        padding-left: 1.3em;
+        padding-right: 2em;
+        font-family: Space Mono;
+        display: grid;
+        grid-template-rows: 5em 5em 10em;
+        .reset-btn{
+            margin-top: 6em;
+        }
+    }
+    .footer{
+        padding: 25px 35px 25px 25px;
+      
+    }
+    .tip-total{
+        .tip-amount{
+            .number1{
+                color:hsl(172, 67%, 45%);
+                font-family: Space Mono;
+                font-size: 3rem;
+            }
+        }
+        .total-amount{
+            .number2{
+                color:hsl(172, 67%, 45%);
+                font-family: Space Mono;
+                font-size: 3rem;
+            }
+        }
+        
+    }
+    section{
+        .calc-body{
+            .b-input{
+                input{
+                    width: 80%;
+                }
+            }
+            .nop-input{
+                input{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+    
+}
